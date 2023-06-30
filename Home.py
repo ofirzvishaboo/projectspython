@@ -34,10 +34,10 @@ with col3:
         st.header(row["title"])
         st.write(row["description"])
         st.image("ProjectImages/" + row["image"])
-        st.write(f"[Source code]{row['url']}")
+        st.write(f"[Source code]({row['url']})")
 with col4:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("ProjectImages/" + row["image"])
-        st.write(f"[Source code]{row['url']}")
+        st.write(f"[Source code]({row['url']})")
